@@ -1,0 +1,19 @@
+# Turn on the screen startup message
+startup_message on
+
+# Set the default shell
+shell /usr/bin/fish
+
+# Set a nice status bar
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+
+# Set a window title
+termcapinfo xterm 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
+
+# Enable mouse scrolling
+termcapinfo xterm* ti@:te@
+defscrollback 10000
+
+term alacritty
+
